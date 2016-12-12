@@ -1,0 +1,21 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\node-v6.9.1-win-x64\\node.exe',
+1 verbose cli   'C:\\node-v6.9.1-win-x64\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'access',
+1 verbose cli   'index.html' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose stack Error: no package name passed to command and no package.json found
+4 verbose stack     at C:\node-v6.9.1-win-x64\node_modules\npm\lib\access.js:119:16
+4 verbose stack     at ReadFileContext.<anonymous> (C:\node-v6.9.1-win-x64\node_modules\npm\node_modules\read-package-json\read-json.js:90:21)
+4 verbose stack     at ReadFileContext.callback (C:\node-v6.9.1-win-x64\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16)
+4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:365:13)
+5 verbose cwd C:\Users\c14364a\Desktop\Training\Angular Js\Scripts\docs
+6 error Windows_NT 6.1.7601
+7 error argv "C:\\node-v6.9.1-win-x64\\node.exe" "C:\\node-v6.9.1-win-x64\\node_modules\\npm\\bin\\npm-cli.js" "access" "index.html"
+8 error node v6.9.1
+9 error npm  v3.10.8
+10 error no package name passed to command and no package.json found
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
