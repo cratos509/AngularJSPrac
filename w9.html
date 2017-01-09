@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UpperCase and LowerCase</title>
+	<script type="text/javascript">
+	function f1(){
+		var obj = document.getElementById("t1");
+		var sp1 = document.getElementById("s1");
+		var sp2 = document.getElementById("s2");
+		sp1.innerText = obj.value.toUpperCase();
+		sp2.innerText = obj.value.toLowerCase();
+	}
+	</script>
+</head>
+<body>
+	Enter your name : <input type="text" name="name1" id="t1" onkeyup="f1()">
+	<br/>
+	<span id="s1"> </span><br/>
+	<span id="s2"> </span>
+</body>
+</html>

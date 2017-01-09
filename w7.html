@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webpage to handle mouse and key events</title>
+	<script type="text/javascript">
+		function f1(){
+			alert("Welcome");
+		}
+		
+		function f2(){
+			var obj = document.getElementById("t1");
+			var spobj = document.getElementById("sp1");
+			spobj.innerText = obj.value;
+		}
+
+	</script>
+</head>
+<body>
+	<h1 onmouseover="f1()">Programming javascript demo</h1>
+	Enter your name : <input type="text" id="t1" onkeyup="f2()"><br/>
+	Welcome to <span id="sp1"> </span>
+
+</body>
+</html>

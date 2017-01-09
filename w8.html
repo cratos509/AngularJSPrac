@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mouse events</title>
+	<script type="text/javascript">
+		function f1(){
+			var obj = document.getElementById("div1");
+			obj.style.backgroundColor="pink";
+			obj.style.color="blue"
+		}
+
+		function f2(){
+			var obj = document.getElementById("div1");
+			obj.style.backgroundColor="white";
+			obj.style.color="blue" 			
+		}
+	</script>
+</head>
+<body>
+	<h1>JavaScript Demo</h1>
+	<div id="div1" onmouseover="f1()" onmouseout="f2() "><br/>
+	dynamic styles using js
+	</div>
+</body>
+</html>
