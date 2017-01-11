@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function f1(){
+			
+			var ar = [10,20,30,40];
+			
+			var obj = document.getElementById("List1");
+			
+			obj.innerHTML = " ";
+			flen = ar.length;
+			for (var i = 0; i < flen ; i++) {
+				
+					obj.innerHTML+="<li>"+ar[i]+"</li>";
+				}
+			}
+	</script>
+</head>
+<body>
+	<input type="button" onclick="f1()" value="Get Data">
+	<ul id="List1"></ul>
+</body>
+</html>
