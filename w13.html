@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Creation method two</title>
+	<script type="text/javascript">
+		function f1(){
+			var obj = new Object();
+			obj.id = 1025;
+			obj.sname = "Anshu";
+			obj.course = "Angular JS";
+
+			var  str = "Student ID : "+obj.id+"<br/>";
+			str += "Student Name : "+obj.sname+"<br/>";
+			str += "Student Course : "+obj.course+"<br/>";
+			var str1 = document.getElementById("sp1");
+			str1.innerHTML = str;
+		}
+	</script>
+</head>
+<body>
+<input type="button" onclick="f1()" value="ShowDetails"><br/>
+<span id="sp1"></span>
+
+</body>
+</html>

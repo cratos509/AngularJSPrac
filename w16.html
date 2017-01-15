@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create, Update, Show the Object in JavaScript</title>
+	<script type="text/javascript">
+		var eno = document.getElementById("t1");
+		var ename = document.getElementById("t2");
+		var job = document.getElementById("t3");
+
+		var obj;
+
+
+
+		function f1(){
+			function employee(x,y,z){
+				this.eno = x;
+				this.ename = y;
+				this.ejob = z;
+			}
+
+			 obj = new employee(eno,ename,job);
+		}
+
+		function f2(){
+			var eno = document.getElementById("t1");
+			var ename = document.getElementById("t2");
+			var ejob = document.getElementById("t3");
+
+			eno.value = obj.eno;
+			ename.value = obj.ename;
+			ejob.value = obj.job;
+		}
+
+		function f3(){
+			var eno = document.getElementById("t1");
+			var ename = document.getElementById("t2");
+			var ejob = document.getElementById("t3");
+			
+			obj.eno = eno.value;
+			obj.ename = ename.value;
+			obj.job = ejob.value;
+
+			var str1 ;
+			str1 = "Employee ID : "+obj.eno+"<br/>"
+			str1 += "Employee Name : "+obj.ename+"<br/>"
+			str1 += "Employee Job : "+obj.job+"<br/>"			
+			var str2 = document.getElementById("sp1");
+			str2.innerHTML = str1;
+		}
+
+	</script>
+</head>
+<body>
+	<input type="button" value="Create" onclick="f1()">
+	<input type="button" value="Update" onclick="f2()">
+	<input type="button" value="Show" onclick="f3()"><br/>
+	<br/>
+	Emp No.  : <input type="text" id="t1"><br/><br/>
+	Emp Name : <input type="text" id="t2"><br/><br/>
+	Emp Job  : <input type="text" id="t3"><br/><br/><br/>
+	<span id="sp1"> </span>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Demo</title>
+	<script type="text/javascript">
+		function f2() {
+			var obj = {sno:1025, sname:"scott",course:"Angular Js"};
+			var str = "Student ID :"+obj.sno+"<br/>";
+			str += "Student Name :"+obj.sname+"<br/>";
+			str += "Student Course : "+obj.course+"<br/>";
+			document.getElementById("sp1").innerHTML = str;
+		}
+
+	</script>
+</head>
+<body>
+	<input type="button" onclick="f2()" value="Show Details"/>
+	<br/><br/>
+	<span id="sp1"> </span>
+</body>
+</html>

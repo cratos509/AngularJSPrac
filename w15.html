@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Creation Summary</title>
+	<script type="text/javascript">
+		// First Approach
+		var student = { id: 1025, sname: "Anshuman", course : "Automation" };
+		
+		// Second Approach
+		var employee = new  Object();
+		employee.id = 111;
+		employee.name = 'Ajinkya';
+		employee.desn = 'Software Engineer';
+
+		// Third Approach
+		function customer(id, name, city){
+			this.cno = id;
+			this.cname = name;
+			this.city = city;
+		}
+
+		var cust = new customer(102, 'Arushi', 'Morroco');
+
+		
+	
+	</script>
+</head>
+<body>
+	<h1>Object Creation in JavaScript</h1>
+	<hr/>
+	<h2>1. Object creation with {}</h2><br/>
+	<hr/>
+	<span id="sp1"></span><br/>
+	<br/>
+	<hr/>
+	<h2>2. Object creation using new keyword</h2>
+	<hr/>
+	<span id="sp2"> </span><br/>
+	<br/>
+	<hr/>
+	<h2>3. Object creation using constructor</h2>
+	<hr/>
+	<span id="sp3"> </span><br/>
+	<hr/>
+	<script type="text/javascript">
+		// Object showing using first approach
+
+		var a1 = "Student ID : "+student.id+"<br/>";
+		a1 += "Student Name : "+student.sname+"<br/>";
+		a1 += "Student Course : "+student.course+"<br/>";
+		document.getElementById("sp1").innerHTML = a1;
+
+		//====================================================
+
+		// Object showing using second approach 
+
+		var a2 = "Employee ID : "+employee.id+"<br/>";
+		a2 += "Employee Name : "+employee.name+"<br/>";
+		a2 += "Employee Course : "+employee.desn+"<br/>";
+		document.getElementById("sp2").innerHTML = a2;
+ 	
+// Object creation third approach
+
+ 			var a3 = "Customer ID : "+cust.cno+"<br/>";
+		 	a3 += "Customer Name : "+cust.cname+"<br/>";
+			a3 += "Customer City : "+cust.city+"<br/>";
+			document.getElementById("sp3").innerHTML = a3;
+	</script>
+</body>
+</html>

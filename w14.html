@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object creation using constructor</title>
+	<script type="text/javascript">
+		
+		function student(id, sname, course){
+			this.sno = id;
+			this.name = sname;
+			this.cname = course;
+		}
+
+		function f1(){
+			var str = new student(102, 'Allen', 'Btech');
+			var str1 = "Student ID : "+str.sno+"<br/>";
+			str1 += "Student Name: "+str.name+"<br/>";
+			str1 += "Student course : "+str.cname+"<br/>";
+
+			document.getElementById("sp1").innerHTML = str1;
+		}
+	</script>
+</head>
+<body>
+<input type="button"  onclick="f1()" value="Show Details"/>
+<br/>
+<span id="sp1"> </span>
+</body>
+</html>
