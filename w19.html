@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular JS Demo 2</title>
+	<script src="Scripts/angular.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body ng-app="" ng-init="x='lightgreen'">
+	<h1>Angular JS app Demo2</h1>
+	<hr/>
+			Select ColorName : 
+		<select ng-model="x">
+			<option>pink</option>
+			<option>cyan</option>
+			<option>red</option>
+		</select>
+		
+
+		<table  bgcolor="{{x}}" class="table table-bordered" width="80px" border="2">
+		<tr>
+			<td>1025</td>
+			<td>Scott</td>
+			<td>AJS</td>
+		</tr>
+		<tr>
+			<td>1026</td>
+			<td>Tiger</td>
+			<td>JQuery</td>
+		</tr>
+		</table>
+
+	
+</body>
+</html>
+

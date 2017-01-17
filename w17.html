@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Object and Store the values into Tables </title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript">
+		function f1(){
+			var students = [
+				{sno:101, sname:"scott", course:"Java"},
+				{sno:102, sname:"catherine", course:"Angular JS"},
+				{sno:103, sname:"Ashima", course:"React JS"},
+				{sno:104, sname:"Aishwarya", course:"Express JS"},
+				{sno:105, sname:"Sameer", course:"Javascript"},
+				{sno:106, sname:"Anshu", course:"Python"},
+			];
+
+			var str = " ";
+
+			for (var i = 0; i< students.length; i++) {
+				str = str + "<tr>";
+
+				str = str +"<td>"+students[i].sno+"</td>";
+				str = str +"<td>"+students[i].sname+"</td>";
+				str = str +"<td>"+students[i].course+"</td>";
+				str = str + "</tr>";
+			}
+
+			document.getElementById("table1").innerHTML = str;
+		}
+	</script>
+</head>
+<body>
+	<h1> Object Insertion in Tables.</h1>
+	<hr>
+	<input type="button" onclick="f1()" value = "Show Table">
+	<hr/>
+
+	<table id="table1" border="2" width ="400px">
+	</table>
+
+</body>
+</html>
